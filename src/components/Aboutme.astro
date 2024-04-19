@@ -1,10 +1,19 @@
 ---
+const {id:id} = Astro.props
 import User from '../components/Icons/User.astro';
 ---
 
-<section>
-    <h2 class="text-3xl font-semibold text-white flex mt-6 pl-5 gap-x-3 items-center dark:text-white">
+<section id={id}>
+    <h2 class="text-3xl font-semibold text-white flex mt-6 pl-5 gap-x-3 items-center dark:text-white pb-6">
         <User class="size-7"/>
-        Sobre mi
+        Sobre mi 
     </h2>
-</section>
+        <article class="flex flex-col md:flex-row gap-8 justify-center items-center">
+            <div class="mb-4 text-white font-normal text-pretty order-2 md:order-1 text-2xl">
+                <p>
+                    Mi nombre es Danilo caceres soy DJ profecional hacer 10 años estudie en el Palacio de la musica con Oscar Valdez uno de losmejores DJ de uruguay y latinoamerica Contando con el abal del palacio de la musica y DJ School como DJ internacional 
+                </p>
+            </div>
+            <img class="rounded-full size-64" src="https://scontent.fmvd3-1.fna.fbcdn.net/v/t35.18174-12/10585794_10204316325017838_1571184306_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=tsmUKRoGcX8Ab6QI8XC&_nc_ht=scontent.fmvd3-1.fna&oh=00_AfAbXv8pZF0FdHhPr21g0_20emJQr9431n20mDnLj9kanw&oe=66234415">
+        </article>
+    </section>

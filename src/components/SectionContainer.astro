@@ -1,3 +1,7 @@
-<section class={"w-full flex flex-col sm:flex-row px-4 mx-auto gap-5 py-4 h-fit "}>
+---
+const {class: classname, id } = Astro.props
+---
+
+<section id={id} class={"w-full flex flex-col sm:flex-row px-4 mx-auto gap-5 py-4 h-fit ${classname}"}>
     <slot />
 </section>

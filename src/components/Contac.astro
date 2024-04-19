@@ -1,0 +1,23 @@
+---
+const CONTACT =[
+  {
+    title:"Contacto",
+    label: "contacto",
+    url: "/#Contacto",
+  }
+]
+const {id:id} = Astro.props
+---
+{CONTACT.map (link => (
+<a
+  class="group inline-block rounded-full bg-gradient-to-r from-white via-white to-white p-[2px] hover:text-black focus:outline-none focus:ring active:text-opacity-75"
+  href={link.url}
+>
+  <span
+    class="block rounded-full bg-teal-500 px-8 py-3 text-sm font-medium group-hover:bg-transparent"
+  >
+    {link.title}
+  </span>
+</a>
+
+))}
