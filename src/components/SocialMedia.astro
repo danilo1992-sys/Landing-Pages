@@ -1,14 +1,13 @@
 ---
-import Socialpill from '../components/Socialpill.astro';
-import WhatsApp from '../components/Icons/WhatsApp.astro';
+import SocailPill from '../components/SocailPill.astro';
+import Whatsapp from '../components/Icons/WhatsApp.astro';
 import Instagram from '../components/Icons/Instagram.astro';
 ---
-
-<nav class="flex mt-8 flex-wrap">
-    <Socialpill href="https://wa.me/095433880">
-        <WhatsApp class="size-12 md:size-14"/>
-    </Socialpill>
-    <Socialpill href="https://www.instagram.com/danidjeventos/">
-        <Instagram class="size-12 md:size-14 "/>
-    </Socialpill>
+<nav class="flex gap-4 mt-8 justify-self-center">
+    <SocailPill href="https://wa.me/095433880">
+        <Whatsapp class="size-14"/>
+    </SocailPill>
+    <SocailPill href="https://www.instagram.com/danidjeventos/">
+        <Instagram class="size-14"/>
+    </SocailPill>
 </nav>
