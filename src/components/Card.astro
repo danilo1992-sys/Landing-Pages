@@ -2,26 +2,20 @@
 const EVENTS = [
 	{
 		title: "Cumpleaños de 15",
-		description:
-			"La fiesta de 15 años es un evento especial en la vida de los jóvenes. Ofrecemos un paquete completo con iluminación y sonido de calidad para una noche inolvidable y mágica.",
-
-		image: "/public/tarta-quince.jpg",
+		description: "La fiesta de 15 años es un evento especial en la vida de los jóvenes. Ofrecemos un paquete completo con iluminación y sonido de calidad para una noche inolvidable y mágica.",
+		image: "./public/tarta-quince.jpg",
 		alt: "Cumpleaños",
 	},
 	{
 		title: "Bodas",
-		description:
-			"La boda de tus sueños se hace realidad con nuestro servicio de iluminación y sonido de última generación. Con nosotros, podrás crear una noche mágica e inolvidable para ti y tus seres queridos.",
-
-		image: "/public/novio-poniendo-anillo-dedo-novia.jpg",
+		description:"La boda de tus sueños se hace realidad con nuestro servicio de iluminación y sonido de última generación. Con nosotros, podrás crear una noche mágica e inolvidable para ti y tus seres queridos.",
+		image: "./public/novio-poniendo-anillo-dedo-novia.jpg",
 		alt: "Bodas",
 	},
 	{
 		title: "Eventos Corporativos",
-		description:
-			"Desde conferencias y presentaciones hasta fiestas de empresa, podemos proporcionarte todo lo que necesitas para asegurarte de que tu evento sea un éxito",
-		image: "/public/12003024_884898498259258_6130636717072031986_n-original.webp",
-
+		description: "Desde conferencias y presentaciones hasta fiestas de empresa, podemos proporcionarte todo lo que necesitas para asegurarte de que tu evento sea un éxito",
+		image: "./public/12003024_884898498259258_6130636717072031986_n-original.webp",
 		alt: "Eventos",
 	},
 ];
@@ -29,17 +23,15 @@ const EVENTS = [
 
 {
 	EVENTS.map((link) => (
-<article class="group border-lg h-fit ">
+<article class="group border-lg h-fit">
   <img
     src={link.image}
     class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
   />
-
   <div class="p-4">
-    <a href="#">
+    <a>
       <h3 class="text-lg font-medium text-white">{link.title}</h3>
     </a>
-
     <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 float-right flex items-center break-all pb-8">
       {link.description}
     </p>

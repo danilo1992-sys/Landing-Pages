@@ -9,7 +9,8 @@ import Layout from '../layouts/Layout.astro';
 import Mail from '../components/Mailform.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Servicios from '../components/Servicios.astro';
-import Socialmedia from '../components/SocialMedia.astro';
+import Pago from '../components/Pago.astro';
+import MetodosdePago from '../components/MetodosdePago.astro';
 ---
 
 <Layout title="Dani DJ">
@@ -22,6 +23,10 @@ import Socialmedia from '../components/SocialMedia.astro';
 		</SectionContainer>
 		<SectionContainer id="Sobre mi">
 			<Aboutme />
+		</SectionContainer>
+		<Pago id="Metodos de pago"/>
+		<SectionContainer>
+			<MetodosdePago/>
 		</SectionContainer>
 		<SectionContainer id="Contacto">
 			<Contacto/>

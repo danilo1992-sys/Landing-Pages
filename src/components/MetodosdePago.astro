@@ -1,0 +1,40 @@
+---
+const METODO =[
+    {
+        title:"MercadoPago",
+        name:"mercadoPago",
+        description:"  Financiacion con todas las trjetas asta en 10 cuotas sin rtecargo (se financia monto completo al momento de la contatacion)",
+        image: "/public/mercado-pago.svg"
+    },
+    {
+      title:"Transferencía bancaría",
+      name:"Itau",
+      description:"Se avona el 50% del servicio al momento de la contratacion y el resto el dia del evento con el comprobante de la transferecia",
+      image:"/public/itau.svg"
+    },
+    {
+      title:"Transferencía bancaría",
+      name:"Itau",
+      description:"Se avona el 50% del servicio al momento de la contratacion y el resto el dia del evento",
+      image:"/public/illust57-5439.svg"
+    }
+]
+---
+{
+    METODO.map(({image, name, description, title}) => (
+    <div class="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white ">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat ">
+    <img
+      class="rounded-t-lg border-b "
+      src={image}
+      alt={name} />
+  </div>
+      <p class="text-black text-lg font-medium text-center">{title}</p>
+  <div class="p-6">
+    <p class="text-base">
+      {description}
+    </p>
+  </div>
+</div>
+
+))}
