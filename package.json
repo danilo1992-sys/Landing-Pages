@@ -12,11 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.5.10",
     "@astrojs/tailwind": "^5.1.0",
-<<<<<<< HEAD
-    "@fontsource-variable/inter": "^5.0.18",
-=======
     "@fontsource-variable/inter": "^5.0.17",
->>>>>>> 58ed9765c6baa21765ea0c1225896c5e934979fc
     "astro": "^4.6.3",
     "flowbite": "^2.3.0",
     "preline": "^2.1.0",
