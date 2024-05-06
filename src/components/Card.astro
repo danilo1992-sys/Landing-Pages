@@ -19,11 +19,14 @@ const EVENTS = [
 		alt: "Eventos",
 	},
 ];
+
+const {id} = Astro.props
+
 ---
 
 {
 	EVENTS.map((link) => (
-<article class="group border-lg h-fit">
+<article id={id} class="group border-lg h-fit">
   <img
     src={link.image}
     class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"

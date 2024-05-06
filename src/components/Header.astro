@@ -51,6 +51,42 @@ import Contact from '../components/Contac.astro';
   </nav>
 </section>
 
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navitems = document.querySelectorAll("a")
+
+    const callbacks = (entries: any[]) =>{
+      entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+          navitems.forEach((item) =>{
+            if (item.getAttribute("aria-labe") == entry.target.id) {
+              item.classList.add("link-active")
+            } else {
+              item.classList.add("link-active")
+          }
+        });
+      }
+    });
+  };
+
+
+  const observer = new IntersectionObserver(callbacks , {
+    root:null,
+    rootMargin:"0px",
+    threshold: 0.3,
+  });
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  window.onunload = () => {
+    observer.disconnect();
+    };
+  });
+</script>
+
 <style>
   nav {
     animation: nav-shadown 1s linear both;
